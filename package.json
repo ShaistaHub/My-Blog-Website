@@ -1,0 +1,20 @@
+{
+  "name": "blogswebsite",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "node server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "start": "concurrently \"npm run dev --prefix BackendFolder\" \"npm run dev --prefix FrontendFolder\""
+
+  },
+  "dependencies": {
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10"
+  }
+}
